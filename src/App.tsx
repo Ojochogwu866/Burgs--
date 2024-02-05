@@ -22,7 +22,6 @@ function App() {
   })
   return (
     <>
-    
       <Navigation
       isTopOfPage = {isTopOfPage}
       selectedPage = {selectedPage} 
