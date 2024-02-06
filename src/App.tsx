@@ -1,6 +1,5 @@
 import Navigation from './components/Navigation'
-// import Home from '@/scenes/home'
-// import Footer from '@/scenes/footer'
+import Landing from './components/Landing'
 import { useEffect, useState } from 'react'
 import { SelectedPage } from './shared/types'
 
@@ -26,8 +25,7 @@ function App() {
       isTopOfPage = {isTopOfPage}
       selectedPage = {selectedPage} 
       setSelectedPage = {setSelectedPage} />
-      {/* <Home />
-      <Footer/> */}
+      <Landing/>
     </>
   )
 }

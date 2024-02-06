@@ -10,7 +10,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Page: React.FC<Props> = ({
+const Link: React.FC<Props> = ({
   page,
   selectedPage,
   pagelink,
@@ -22,7 +22,7 @@ const Page: React.FC<Props> = ({
   return (
     <NavLink
       to={`/${pagelink}`}
-      className={`${selectedPage === lowerCasePage ? "" : ""} text-[14px] pb-[4px] ${textStyles}`}
+      className={`${selectedPage === lowerCasePage ? "" : ""} font-semibold text-[14px] pb-[4px] ${textStyles}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
         {({ isActive }) => (
@@ -32,4 +32,4 @@ const Page: React.FC<Props> = ({
   );
 };
 
-export default Page;
+export default Link;
